@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/"
-, tags = "@smoke")
+//, tags = "@smoke"
+
+)
 
 public class CucumberRunner extends TestBase {
 

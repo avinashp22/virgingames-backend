@@ -1,12 +1,23 @@
-Feature: VirginGames Application
-  I want to verify data in the virgin games webpage
+Feature: VirginGames GBP API Test
 
-  Scenario: Virgin Games Venture ID
-    Given I am on virgin games application
-    When I send a request to get all data
-    Then I should verify the stream ID is 194
+  Background: User is on Virgin Games API
 
-  Scenario: Virgin Games Maximum Number of Cards
-    Given I am on virgin games application
-    When I send a request to get all data
-    Then I should verify maximum number of cards
+  Scenario: Verify jackpotId is Roxor Progressives
+    When User sends a request to get all GBP data
+    Then Verify Jackpot id is Roxor Progressives
+
+  Scenario: Verify pots 5th id is play-classic-wilds-progressive
+    When User sends a request to get all GBP data
+    Then Verify 5th id is play-classic-wilds-progressive
+
+  Scenario: Verify currency is GBP
+    When User sends a request to get all GBP data
+    Then Verify currency is GBP
+
+  Scenario: Verify currency is EUR
+    When User sends a request to get all EUR data
+    Then Verify currency is EUR
+
+  Scenario: Verify EUR amount for 2nd index is EUR 65385.3
+    When User sends a request to get all EUR data
+    Then Verify EUR amount for 2nd index is EUR 65385.3

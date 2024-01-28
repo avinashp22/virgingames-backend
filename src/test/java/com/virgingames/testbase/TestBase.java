@@ -13,7 +13,7 @@ public class TestBase {
     public static void init() {
         propertyReader = PropertyReader.getInstance();
         RestAssured.baseURI = propertyReader.getProperty("baseUrl");
-        RestAssured.basePath = Path.GETUSER;
+        RestAssured.basePath = Path.ROXOR;
     }
 
 }
