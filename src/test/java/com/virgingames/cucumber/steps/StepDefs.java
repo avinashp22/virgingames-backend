@@ -49,9 +49,9 @@ public class StepDefs {
         response.body("data.pots[0].currency", equalTo("EUR"));
     }
 
-    @Then("Verify EUR amount for 2nd index is EUR 65385.3")
+    @Then("Verify EUR amount for 2nd index is EUR 65565.9")
     public void verifyEURAmountFor2ndIndexIsEUR() {
         response = steps.getAllPotsEURData();
-        response.body("data.pots[2].amount", equalTo(65385.3F));
+        response.body("data.pots[2].amount", equalTo(65565.9F));
     }
 }

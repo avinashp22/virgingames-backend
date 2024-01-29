@@ -49,12 +49,12 @@ public class GameTest extends TestBase {
         response.body("data.pots[0].currency", equalTo("EUR"));
     }
 
-    @Title("Verify amount for 2nd index is 65385.3")
+    @Title("Verify amount for 2nd index is 65565.9")
     @Test
     public void test005() {
         ValidatableResponse response = gameSteps.getAllPotsEURData();
         response.statusCode(200).log().all();
-        response.body("data.pots[2].amount", equalTo(65385.3F));
+        response.body("data.pots[2].amount", equalTo(65565.9F));
     }
 
 

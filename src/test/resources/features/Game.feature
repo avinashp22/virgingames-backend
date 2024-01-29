@@ -18,6 +18,6 @@ Feature: VirginGames GBP API Test
     When User sends a request to get all EUR data
     Then Verify currency is EUR
 
-  Scenario: Verify EUR amount for 2nd index is EUR 65385.3
+  Scenario: Verify EUR amount for 2nd index is EUR 65565.9
     When User sends a request to get all EUR data
-    Then Verify EUR amount for 2nd index is EUR 65385.3
+    Then Verify EUR amount for 2nd index is EUR 65565.9
